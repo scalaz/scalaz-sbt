@@ -1,0 +1,5 @@
+# Verify that the sbt-header plugin is correctly activated
+
+-> headerCheck
+> headerCreate
+> headerCheck
