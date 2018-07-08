@@ -1,0 +1,5 @@
+# Verify that the sbt-scalafmt plugin is correctly activated
+
+-> scalafmtCheck
+> compile
+> scalafmtCheck

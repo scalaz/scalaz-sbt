@@ -1,13 +1,15 @@
 package scalaz.build
 
 import sbt._, Keys._
+import org.scalafmt.sbt.ScalafmtPlugin.autoImport.scalafmtOnCompile
 
 object Compilation {
 
   val buildSettings = Seq(
     scalaVersion := "2.12.6",
     crossScalaVersions := Seq("2.11.12", "2.12.6", "2.13.0-M4"),
-    scalacOptions := stdScalacOptions ++ crossScalacOptions(scalaVersion.value)
+    scalacOptions := stdScalacOptions ++ crossScalacOptions(scalaVersion.value),
+    scalafmtOnCompile := true
   )
 
   val projectSettings = Seq(

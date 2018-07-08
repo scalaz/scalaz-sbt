@@ -1,14 +1,15 @@
 package scalaz.build
 
-import sbt._, Keys._
-
+import sbt._
+import Keys._
 import de.heikoseeberger.sbtheader.HeaderPlugin
+import org.scalafmt.sbt.ScalafmtPlugin
 
 object ScalazPlugin extends AutoPlugin {
 
   override def trigger = allRequirements
 
-  override def requires = HeaderPlugin
+  override def requires = HeaderPlugin && ScalafmtPlugin
 
   override def buildSettings =
     Compilation.buildSettings ++

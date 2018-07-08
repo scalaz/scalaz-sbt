@@ -5,6 +5,7 @@ scalaVersion := "2.12.6"
 sbtPlugin    := true
 
 addSbtPlugin("de.heikoseeberger" % "sbt-header" % "5.0.0")
+addSbtPlugin("com.geirsson" % "sbt-scalafmt" % "1.5.1")
 
 scriptedLaunchOpts := { scriptedLaunchOpts.value ++
   Seq("-Xmx1024M", "-Dplugin.version=" + version.value)
