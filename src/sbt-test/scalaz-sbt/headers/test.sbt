@@ -1,3 +1,1 @@
-enablePlugins(ScalazPlugin)
-
 name := "headers"
