@@ -12,7 +12,6 @@ object Compilation {
       scalacOptions := stdScalacOptions ++ crossScalacOptions(
         scalaVersion.value
       ),
-      scalafmtOnCompile := true,
       incOptions := incOptions.value.withLogRecompileOnMacro(false)
     )
 

@@ -1,5 +1,7 @@
-# Verify that the sbt-scalafmt plugin is correctly activated
+# Verify that the sbt-scalafmt plugin is correctly activated and that
+# scalafmt config file is created
 
 -> scalafmtCheck
 > compile
 > scalafmtCheck
+> scalafmtConfigFileCreated

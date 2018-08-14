@@ -1,3 +1,5 @@
+import sbt._
+
 organization := "org.scalaz"
 name         := "scalaz-sbt"
 version      := "0.1-SNAPSHOT"
@@ -17,4 +19,7 @@ addSbtPlugin("com.dwijnand"       % "sbt-travisci" % "1.1.1")
 addSbtPlugin("com.geirsson"       % "sbt-scalafmt" % "1.6.0-RC3")
 addSbtPlugin("pl.project13.scala" % "sbt-jmh"      % "0.3.3")
 
+
 scalafmtOnCompile := true
+scalafmtConfig := Some(baseDirectory.value / "src" / "main" / "resources" / "scalafmt.conf")
+
