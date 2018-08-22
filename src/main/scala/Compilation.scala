@@ -21,7 +21,7 @@ object Compilation {
       "-Xfatal-warnings"
     ),
     resolvers ++= Seq(
-      "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+      "Sonatype OSS Snapshots".at("https://oss.sonatype.org/content/repositories/snapshots")
     ),
     libraryDependencies ++= compilerPlugins ++ Seq(
       "com.github.ghik" %% "silencer-lib" % silencerVersion % Provided,
