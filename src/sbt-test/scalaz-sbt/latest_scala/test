@@ -1,1 +1,7 @@
-> compile
+> ++2.11.12!
+> show scalacOptions
+> ++2.12.8!
+> show scalacOptions
+> ++2.13.0!
+> show scalacOptions
+> + compile

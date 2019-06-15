@@ -1,10 +1,11 @@
 language: scala
 
-scala:
-  - 2.12.6
+scala: ""
+
+dist: xenial
 
 jdk:
-  - oraclejdk8
+  - openjdk8
 
 script:
   - sbt ^scripted

@@ -1,2 +1,2 @@
 libraryDependencies += { "org.scala-sbt" %% "scripted-plugin" % sbtVersion.value }
-addSbtPlugin("com.geirsson"       % "sbt-scalafmt" % "1.6.0-RC3")
+addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.0.0")
